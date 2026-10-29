@@ -1,0 +1,19 @@
+{
+  "name": "kiwi-apps",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Community directory of independently maintained Kiwi apps",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20.14.0" },
+  "scripts": {
+    "validate": "node scripts/validate-catalog.mjs",
+    "test": "node --test",
+    "check": "npm test && npm run validate"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "yaml": "2.9.1"
+  }
+}

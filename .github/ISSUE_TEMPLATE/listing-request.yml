@@ -1,0 +1,84 @@
+name: App listing request
+description: Propose a Kiwi app you maintain or are authorized to represent.
+title: "[Listing] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a community directory, not a certification service. Use public HTTPS links and do not include secrets, tokens, class IDs, or private deployment details. A pull request with catalog YAML and both README rows is also welcome.
+  - type: input
+    id: app-name
+    attributes:
+      label: App name
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Source repository
+      description: Public HTTPS URL of the app's source repository.
+    validations:
+      required: true
+  - type: input
+    id: documentation
+    attributes:
+      label: Setup documentation
+      description: Public HTTPS URL explaining setup and usage.
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: What does the app do?
+      description: Describe its purpose and how it integrates with Kiwi.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - exercises
+        - simulations
+        - collaboration
+        - analytics
+        - utilities
+    validations:
+      required: true
+  - type: textarea
+    id: maintainer
+    attributes:
+      label: Maintainer and relationship to the app
+      description: Give the responsible person or team's name and public HTTPS profile URL, and explain your role.
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: App source license
+      description: An SPDX identifier is recommended.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Author-stated compatibility
+      description: Describe the Kiwi version or revision tested, if known, and any setup or compatibility limitations. The directory does not verify this statement.
+    validations:
+      required: true
+  - type: input
+    id: demo
+    attributes:
+      label: Demo URL (optional)
+      description: Public HTTPS URL, with no credentials or tokens.
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Submission confirmations
+      options:
+        - label: I maintain this app or have permission to submit it on behalf of its maintainers.
+          required: true
+        - label: I understand that listing is separate from Kiwi administrator approval, registration, and class enablement.
+          required: true
+        - label: I understand that inclusion and passing metadata checks do not certify the app.
+          required: true

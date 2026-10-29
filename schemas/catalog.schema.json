@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:kiwi:catalog-entry:1",
+  "title": "Kiwi community catalog entry",
+  "description": "Discovery metadata only. A valid entry is not a security review, compatibility test, or installation authorization.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "slug", "name", "description", "category", "maintainer", "repository", "documentation", "license", "compatibility"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "slug": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Stable directory identity; must match the YAML filename without its extension."
+    },
+    "name": { "type": "string", "minLength": 1, "maxLength": 80, "pattern": "\\S" },
+    "description": { "type": "string", "minLength": 1, "maxLength": 240, "pattern": "\\S" },
+    "category": { "enum": ["exercises", "simulations", "collaboration", "analytics", "utilities"] },
+    "maintainer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "url"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 100, "pattern": "\\S" },
+        "url": { "$ref": "#/definitions/httpsUrl" }
+      }
+    },
+    "repository": { "$ref": "#/definitions/httpsUrl" },
+    "documentation": { "$ref": "#/definitions/httpsUrl" },
+    "license": {
+      "type": "string", "minLength": 1, "maxLength": 100, "pattern": "\\S",
+      "description": "The app's license; use an SPDX identifier or expression where available. This validator does not verify licensing claims."
+    },
+    "compatibility": {
+      "type": "string", "minLength": 1, "maxLength": 300, "pattern": "\\S",
+      "description": "Author-declared supported Kiwi/SDK versions or a concise compatibility statement. Not a tested badge."
+    },
+    "demo": { "$ref": "#/definitions/httpsUrl" },
+    "manifestPath": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240,
+      "pattern": "^(?!\\.\\.?($|/))(?!.*\/\\.\\.?($|/))[A-Za-z0-9._-]+(?:/[A-Za-z0-9._-]+)*$",
+      "description": "Optional path to the author's own app metadata, relative to their repository root. No installation semantics are implied."
+    }
+  },
+  "definitions": {
+    "httpsUrl": {
+      "type": "string",
+      "maxLength": 2048,
+      "format": "uri",
+      "allOf": [{ "format": "https-url" }],
+      "$comment": "The CLI implements https-url with Node's URL parser to require a valid HTTPS host/port and no user information. Other schema consumers must register this custom format too.",
+      "pattern": "^https://[^/?#@]+(?:[/?#]|$)",
+      "description": "A public HTTPS URL without embedded credentials. Reachability and ownership require human review."
+    }
+  }
+}

@@ -1,0 +1,43 @@
+name: App correction, removal, or transfer
+description: Report directory information that needs to change.
+title: "[Catalog] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for directory information. Send app bugs and feature requests to the app's own repository. Do not post sensitive reports, credentials, tokens, class IDs, or private deployment details.
+  - type: input
+    id: listing
+    attributes:
+      label: App name or catalog slug
+    validations:
+      required: true
+  - type: dropdown
+    id: change-type
+    attributes:
+      label: Requested change
+      options:
+        - Correct metadata or a broken link
+        - Remove a listing
+        - Transfer maintenance
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What should change, and why?
+      description: Describe the current information and the proposed correction, removal, or transfer.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Public evidence
+      description: Link relevant public sources. For a transfer, include confirmation from the current maintainer or explain the basis for the request.
+    validations:
+      required: true
+  - type: textarea
+    id: relationship
+    attributes:
+      label: Your relationship to the app (optional)
+      description: Anyone can report an error. If you represent the app's maintainers, say so here.

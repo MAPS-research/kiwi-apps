@@ -1,0 +1,17 @@
+# FICTIONAL SUBMISSION EXAMPLE. This is not a listed or working app.
+# Replace all example values before copying into catalog/<your-slug>.yaml.
+schemaVersion: 1
+slug: study-coach
+name: Study Coach
+description: A fictional study planner demonstrating the catalog entry format.
+category: exercises
+maintainer:
+  name: Example contributor
+  url: https://github.com/example
+repository: https://github.com/example/study-coach
+documentation: https://github.com/example/study-coach#setup
+license: MIT
+compatibility: Replace with your app's supported Kiwi and SDK versions.
+# Optional: remove these fields if your app does not provide them.
+demo: https://example.org/study-coach
+manifestPath: kiwi-app.yaml
