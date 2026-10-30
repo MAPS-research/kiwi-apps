@@ -8,10 +8,9 @@ Listings are community submissions, not certifications. Automated checks validat
 
 ## App directory
 
-No apps are listed yet. The [Study Coach example](examples/study-coach.yaml) is fictional and is not a catalog entry.
-
 | App | Description | Category | Source | Demo | Setup |
 | --- | --- | --- | --- | --- | --- |
+| [Explorable Explanations](catalog/explorable-explanations.yaml) | Interactive concept explanations using curated visualizations or AI-generated pages. | `simulations` | [Source](https://github.com/WangZhewei1027/kiwi-app-demo) | [Demo](https://kiwi-app-demo.vercel.app/explorable-app/) | [Setup](https://github.com/WangZhewei1027/kiwi-app-demo/blob/main/explorable-app/README.md) |
 
 Categories: `exercises`, `simulations`, `collaboration`, `analytics`, and `utilities`.
 

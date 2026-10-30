@@ -1,0 +1,17 @@
+schemaVersion: 1
+slug: explorable-explanations
+name: Explorable Explanations
+description: Interactive concept explanations using curated visualizations or AI-generated pages.
+category: simulations
+maintainer:
+  name: WangZhewei1027
+  url: https://github.com/WangZhewei1027
+repository: https://github.com/WangZhewei1027/kiwi-app-demo
+documentation: https://github.com/WangZhewei1027/kiwi-app-demo/blob/main/explorable-app/README.md
+license: No license specified
+compatibility: >-
+  Vercel-hosted app using the Kiwi SDK for ready/context/updateContext; no
+  specific Kiwi release is claimed. Embedding requires administrator whitelisting,
+  registration and class enablement. AI uses a server-side proxy with environment
+  credentials; curated visualizations load from csvistool.com.
+demo: https://kiwi-app-demo.vercel.app/explorable-app/

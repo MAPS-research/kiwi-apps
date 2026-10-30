@@ -8,10 +8,9 @@
 
 ## 应用目录
 
-目前尚未收录应用。[Study Coach 示例](examples/study-coach.yaml)是虚构的投稿示例，不属于正式目录。
-
 | 应用 | 简介 | 分类 | 源代码 | 演示 | 配置指南 |
 | --- | --- | --- | --- | --- | --- |
+| [Explorable Explanations](catalog/explorable-explanations.yaml) | 通过精选可视化或 AI 生成的页面，提供可交互的概念讲解。 | `simulations` | [源代码](https://github.com/WangZhewei1027/kiwi-app-demo) | [演示](https://kiwi-app-demo.vercel.app/explorable-app/) | [配置指南](https://github.com/WangZhewei1027/kiwi-app-demo/blob/main/explorable-app/README.md) |
 
 分类：`exercises`（练习）、`simulations`（模拟）、`collaboration`（协作）、`analytics`（分析）和 `utilities`（工具）。
 
