@@ -11,6 +11,7 @@
 | 应用 | 简介 | 分类 | 源代码 | 演示 | 配置指南 |
 | --- | --- | --- | --- | --- | --- |
 | [Explorable Explanations](catalog/explorable-explanations.yaml) | 通过精选可视化或 AI 生成的页面，提供可交互的概念讲解。 | `simulations` | [源代码](https://github.com/WangZhewei1027/kiwi-app-demo) | [演示](https://kiwi-app-demo.vercel.app/explorable-app/) | [配置指南](https://github.com/WangZhewei1027/kiwi-app-demo/blob/main/explorable-app/README.md) |
+| [Kiwi Podcast](catalog/kiwi-podcast.yaml) | 根据 Kiwi 课程材料创建和收听班级及个性化播客，支持同步文稿和向 Ask Kiwi 分享上下文。 | utilities | [源代码](https://github.com/ym3116/kiwi-podcast) | [演示](https://podcast.apps.kiwiai.org/) | [配置指南](https://github.com/ym3116/kiwi-podcast#recommended-dev-setup) |
 
 分类：`exercises`（练习）、`simulations`（模拟）、`collaboration`（协作）、`analytics`（分析）和 `utilities`（工具）。
 
