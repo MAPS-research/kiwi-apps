@@ -8,10 +8,9 @@
 
 ## 应用目录
 
-目前尚未收录应用。[Study Coach 示例](examples/study-coach.yaml)是虚构的投稿示例，不属于正式目录。
-
 | 应用 | 简介 | 分类 | 源代码 | 演示 | 配置指南 |
 | --- | --- | --- | --- | --- | --- |
+| [Kiwi Podcast](catalog/kiwi-podcast.yaml) | 根据 Kiwi 课程材料创建和收听班级及个性化播客，支持同步文稿和向 Ask Kiwi 分享上下文。 | utilities | [源代码](https://github.com/ym3116/kiwi-podcast) | [演示](https://podcast.apps.kiwiai.org/) | [配置指南](https://github.com/ym3116/kiwi-podcast#recommended-dev-setup) |
 
 分类：`exercises`（练习）、`simulations`（模拟）、`collaboration`（协作）、`analytics`（分析）和 `utilities`（工具）。
 

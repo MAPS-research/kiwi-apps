@@ -8,10 +8,9 @@ Listings are community submissions, not certifications. Automated checks validat
 
 ## App directory
 
-No apps are listed yet. The [Study Coach example](examples/study-coach.yaml) is fictional and is not a catalog entry.
-
 | App | Description | Category | Source | Demo | Setup |
 | --- | --- | --- | --- | --- | --- |
+| [Kiwi Podcast](catalog/kiwi-podcast.yaml) | Create and listen to class and personalized podcasts from Kiwi course materials, with synchronized transcripts and Ask Kiwi context sharing. | utilities | [Source](https://github.com/ym3116/kiwi-podcast) | [Demo](https://podcast.apps.kiwiai.org/) | [Setup](https://github.com/ym3116/kiwi-podcast#recommended-dev-setup) |
 
 Categories: `exercises`, `simulations`, `collaboration`, `analytics`, and `utilities`.
 

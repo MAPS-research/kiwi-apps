@@ -1,0 +1,17 @@
+schemaVersion: 1
+slug: kiwi-podcast
+name: Kiwi Podcast
+description: Create and listen to class and personalized podcasts from Kiwi course materials, with synchronized transcripts and Ask Kiwi context sharing.
+category: utilities
+maintainer:
+  name: ym3116
+  url: https://github.com/ym3116
+repository: https://github.com/ym3116/kiwi-podcast
+documentation: https://github.com/ym3116/kiwi-podcast#recommended-dev-setup
+license: No license declared in the source repository.
+compatibility: >-
+  External Kiwi iframe app using the postMessage bridge, scoped app tokens,
+  REST document chunks, and MCP. Requires admin whitelisting, registration,
+  class enablement, and app-origin CORS. Standalone Simulator mode is available;
+  no specific Kiwi release compatibility is declared.
+demo: https://podcast.apps.kiwiai.org/
