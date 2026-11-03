@@ -1,0 +1,16 @@
+schemaVersion: 1
+slug: kiwi-flashcard
+name: Kiwi Flashcard
+description: Create and study personal flashcards and instructor-published class decks, with AI generation from Kiwi learning context and course materials.
+category: exercises
+maintainer:
+  name: Kenny-Su
+  url: https://github.com/Kenny-Su
+repository: https://github.com/Kenny-Su/kiwi-flashcard
+documentation: https://github.com/Kenny-Su/kiwi-flashcard#development
+license: No license declared in the source repository.
+compatibility: >-
+  Kiwi class-tab and admin-panel app using scoped tokens and host-proxied AI.
+  Requires Node.js 24+, SQLite storage, admin whitelisting, registration, class
+  enablement, approved prompts, and learning-context/materials scopes.
+  No specific Kiwi release compatibility is declared.
