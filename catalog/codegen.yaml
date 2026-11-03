@@ -1,0 +1,17 @@
+schemaVersion: 1
+slug: codegen
+name: Codegen
+description: Practice Python in a Kiwi-embedded coding workspace, with exercise sets, saved sessions, automated judging, and instructor management.
+category: exercises
+maintainer:
+  name: MAPS Research
+  url: https://github.com/MAPS-research
+repository: https://github.com/MAPS-research/kiwi-codegen-demo
+documentation: https://github.com/MAPS-research/kiwi-codegen-demo#try-it-locally
+license: No license declared in the source snapshot.
+compatibility: >-
+  FastAPI/React iframe demo using Kiwi scoped tokens, the postMessage bridge,
+  and REST/MCP. Requires Docker, a running Kiwi host, admin whitelisting,
+  registration, class enablement, and configured origins. Supports RS256 and
+  legacy HS256 hosts; no public Kiwi release is claimed as tested.
+manifestPath: app/utils/kiwi_apps.py
