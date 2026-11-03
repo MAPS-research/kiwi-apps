@@ -10,6 +10,7 @@ Listings are community submissions, not certifications. Automated checks validat
 
 | App | Description | Category | Source | Demo | Setup |
 | --- | --- | --- | --- | --- | --- |
+| [Codegen](catalog/codegen.yaml) | Practice Python with exercise sets, saved sessions, automated judging, and instructor management. | `exercises` | [Source](https://github.com/MAPS-research/kiwi-codegen-demo) | — | [Setup](https://github.com/MAPS-research/kiwi-codegen-demo#try-it-locally) |
 | [Explorable Explanations](catalog/explorable-explanations.yaml) | Interactive concept explanations using curated visualizations or AI-generated pages. | `visualization` | [Source](https://github.com/WangZhewei1027/kiwi-app-demo) | [Demo](https://kiwi-app-demo.vercel.app/explorable-app/) | [Setup](https://github.com/WangZhewei1027/kiwi-app-demo/blob/main/explorable-app/README.md) |
 | [Kiwi Podcast](catalog/kiwi-podcast.yaml) | Create and listen to class and personalized podcasts from Kiwi course materials, with synchronized transcripts and Ask Kiwi context sharing. | `utility` | [Source](https://github.com/ym3116/kiwi-podcast) | [Demo](https://podcast.apps.kiwiai.org/) | [Setup](https://github.com/ym3116/kiwi-podcast#recommended-dev-setup) |
 
